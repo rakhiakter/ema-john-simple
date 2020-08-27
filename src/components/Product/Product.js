@@ -22,7 +22,7 @@ const product = (props) => {
         </p>
         <button 
         className="main-button"
-        onClick={props.handleAddProduct}
+        onClick={() => props.handleAddProduct(props.product)}
         > 
         <FontAwesomeIcon icon={faShoppingCart} />add to cart
         </button>
